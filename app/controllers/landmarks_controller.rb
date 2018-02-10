@@ -30,6 +30,7 @@ class LandmarksController < ApplicationController
   post '/landmarks/:id' do
     @landmark = Landmark.find_by_id(params[:id])
 
+    redirect '/landmarks'
   end
 
 end
