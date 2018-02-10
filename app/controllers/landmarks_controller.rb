@@ -4,7 +4,9 @@ class LandmarksController < ApplicationController
     erb :'/landmarks/new'
   end
 
-  post 'landmarks'
+  post 'landmarks' do
+    @
+  end
 
   get 'landmarks/:id' do
     @landmark = Landmark.find_by_id(params[:id])
