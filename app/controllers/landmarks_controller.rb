@@ -28,7 +28,8 @@ class LandmarksController < ApplicationController
   end
 
   post '/landmarks/:id' do
-    @landmark =
+    @landmark = Landmark.find_by_id(params[:id])
+
   end
 
 end
